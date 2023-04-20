@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271776EC46F7D1469A5B9F36 /* Pods_JoyRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8795373A85665D0770A40D /* Pods_JoyRide.framework */; };
+		AE5EE8FD29F0CBE80002AA32 /* Firebase AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5EE8FC29F0CBE80002AA32 /* Firebase AuthManager.swift */; };
+		AE5EE8FF29F0D9490002AA32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE5EE8FE29F0D9490002AA32 /* GoogleService-Info.plist */; };
 		AEBEA00029ECB1F000596D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE9FFF29ECB1F000596D06 /* AppDelegate.swift */; };
 		AEBEA00229ECB1F000596D06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEA00129ECB1F000596D06 /* SceneDelegate.swift */; };
 		AEBEA00429ECB1F000596D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEA00329ECB1F000596D06 /* ViewController.swift */; };
@@ -17,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19CA695D689E4C81396553DC /* Pods-JoyRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyRide.debug.xcconfig"; path = "Target Support Files/Pods-JoyRide/Pods-JoyRide.debug.xcconfig"; sourceTree = "<group>"; };
+		928AAEF7B2E6EA3079BD0C4C /* Pods-JoyRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyRide.release.xcconfig"; path = "Target Support Files/Pods-JoyRide/Pods-JoyRide.release.xcconfig"; sourceTree = "<group>"; };
+		AE5EE8FC29F0CBE80002AA32 /* Firebase AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase AuthManager.swift"; sourceTree = "<group>"; };
+		AE5EE8FE29F0D9490002AA32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEBE9FFC29ECB1F000596D06 /* JoyRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBE9FFF29ECB1F000596D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBEA00129ECB1F000596D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		AEBEA00B29ECB1F200596D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBEA00E29ECB1F200596D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBEA01029ECB1F200596D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8795373A85665D0770A40D /* Pods_JoyRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271776EC46F7D1469A5B9F36 /* Pods_JoyRide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66BAF939E45E0A845DC96F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CA695D689E4C81396553DC /* Pods-JoyRide.debug.xcconfig */,
+				928AAEF7B2E6EA3079BD0C4C /* Pods-JoyRide.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AEBE9FF329ECB1F000596D06 = {
 			isa = PBXGroup;
 			children = (
 				AEBE9FFE29ECB1F000596D06 /* JoyRide */,
 				AEBE9FFD29ECB1F000596D06 /* Products */,
+				66BAF939E45E0A845DC96F3C /* Pods */,
+				E48FC1491D391120D4E60461 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +78,74 @@
 		AEBE9FFE29ECB1F000596D06 /* JoyRide */ = {
 			isa = PBXGroup;
 			children = (
-				AEBE9FFF29ECB1F000596D06 /* AppDelegate.swift */,
-				AEBEA00129ECB1F000596D06 /* SceneDelegate.swift */,
-				AEBEA00329ECB1F000596D06 /* ViewController.swift */,
-				AEBEA00529ECB1F000596D06 /* Main.storyboard */,
+				AEBEA01629ECB44400596D06 /* Support files */,
+				AEBEA01929ECB4CD00596D06 /* View */,
+				AEBEA01B29ECB4F100596D06 /* Screens */,
+				AEBEA01829ECB47900596D06 /* Model */,
+				AEBEA01729ECB45E00596D06 /* Extensions */,
 				AEBEA00B29ECB1F200596D06 /* Assets.xcassets */,
-				AEBEA00D29ECB1F200596D06 /* LaunchScreen.storyboard */,
+				AE5EE8FE29F0D9490002AA32 /* GoogleService-Info.plist */,
 				AEBEA01029ECB1F200596D06 /* Info.plist */,
 				AEBEA00829ECB1F000596D06 /* JoyRide.xcdatamodeld */,
 			);
 			path = JoyRide;
+			sourceTree = "<group>";
+		};
+		AEBEA01629ECB44400596D06 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE9FFF29ECB1F000596D06 /* AppDelegate.swift */,
+				AEBEA00129ECB1F000596D06 /* SceneDelegate.swift */,
+				AE5EE8FC29F0CBE80002AA32 /* Firebase AuthManager.swift */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		AEBEA01729ECB45E00596D06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEBEA01829ECB47900596D06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEBEA01929ECB4CD00596D06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEBEA00329ECB1F000596D06 /* ViewController.swift */,
+				AEBEA01A29ECB4DB00596D06 /* ViewModel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEBEA01A29ECB4DB00596D06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AEBEA01B29ECB4F100596D06 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AEBEA00529ECB1F000596D06 /* Main.storyboard */,
+				AEBEA00D29ECB1F200596D06 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E48FC1491D391120D4E60461 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8795373A85665D0770A40D /* Pods_JoyRide.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBEA01329ECB1F200596D06 /* Build configuration list for PBXNativeTarget "JoyRide" */;
 			buildPhases = (
+				0EA7552186903FA523917353 /* [CP] Check Pods Manifest.lock */,
 				AEBE9FF829ECB1F000596D06 /* Sources */,
 				AEBE9FF929ECB1F000596D06 /* Frameworks */,
 				AEBE9FFA29ECB1F000596D06 /* Resources */,
+				79D3608F5453541816A49828 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +186,7 @@
 				};
 			};
 			buildConfigurationList = AEBE9FF729ECB1F000596D06 /* Build configuration list for PBXProject "JoyRide" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -129,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBEA00F29ECB1F200596D06 /* LaunchScreen.storyboard in Resources */,
+				AE5EE8FF29F0D9490002AA32 /* GoogleService-Info.plist in Resources */,
 				AEBEA00C29ECB1F200596D06 /* Assets.xcassets in Resources */,
 				AEBEA00729ECB1F000596D06 /* Main.storyboard in Resources */,
 			);
@@ -136,11 +217,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EA7552186903FA523917353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyRide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D3608F5453541816A49828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyRide/Pods-JoyRide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoyRide/Pods-JoyRide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoyRide/Pods-JoyRide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEBE9FF829ECB1F000596D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5EE8FD29F0CBE80002AA32 /* Firebase AuthManager.swift in Sources */,
 				AEBEA00429ECB1F000596D06 /* ViewController.swift in Sources */,
 				AEBEA00029ECB1F000596D06 /* AppDelegate.swift in Sources */,
 				AEBEA00A29ECB1F000596D06 /* JoyRide.xcdatamodeld in Sources */,
@@ -220,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,6 +410,7 @@
 		};
 		AEBEA01429ECB1F200596D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CA695D689E4C81396553DC /* Pods-JoyRide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +440,7 @@
 		};
 		AEBEA01529ECB1F200596D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928AAEF7B2E6EA3079BD0C4C /* Pods-JoyRide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +454,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
